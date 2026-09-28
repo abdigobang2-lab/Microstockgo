@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Title & Meta SEO -->
+  <title>Microstockgo - Next-Gen Microstock Opportunity & SEO Suite</title>
+  <meta name="description" content="AI-Powered Microstock Opportunity Finder, Market Gap Matrix, Multi-Agency 50 SEO Keywords Generator, and 5-Angle Production Planner for Adobe Stock, Shutterstock & Freepik.">
+  <meta name="keywords" content="microstock tool, microstock keywords, adobe stock keywords generator, shutterstock tagger, microstock market gap, stock footage trends, midjourney prompts for stock, freepik tags generator, microstock contributor suite, ai stock photography, return per item stock">
+  <meta name="author" content="Microstockgo">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://microstockgo.com/">
+  <meta name="theme-color" content="#060913">
+
+  <!-- Tab Bar Favicon Logo -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- Open Graph Meta Tags (Facebook, WhatsApp, LinkedIn, Telegram) -->
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Microstockgo - Next-Gen Microstock Opportunity & SEO Suite">
+  <meta property="og:description" content="Temukan celah pasar microstock dengan demand tinggi dan kompetisi rendah. Lengkap dengan 50 SEO tags multi-agensi, shot list produksi, dan prompt AI komersial.">
+  <meta property="og:url" content="https://microstockgo.com/">
+  <meta property="og:site_name" content="Microstockgo">
+  <meta property="og:image" content="favicon.svg">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Microstockgo - Microstock Opportunity & SEO Suite">
+  <meta name="twitter:description" content="AI-Powered Microstock Opportunity Finder & Multi-Agency 50 SEO Keywords Generator.">
+  <meta name="twitter:image" content="favicon.svg">
+
+  <!-- Schema.org Structured Data (Google Rich Results & Knowledge Graph) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Microstockgo",
+    "url": "https://microstockgo.com/",
+    "description": "AI-Powered Microstock Opportunity Finder, Market Gap Matrix, Multi-Agency SEO Keywords Generator, and Production Shot Planner.",
+    "applicationCategory": "DesignApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-obsidian-blue">
+
+  <div class="app-container">
+    
+    <!-- TOP NAVIGATION & BRANDING -->
+    <header class="app-header">
+      <div class="top-bar">
+        <div class="brand-wrapper">
+          <div class="brand-logo-icon">M</div>
+          <div class="brand-text">Microstock<span>go</span></div>
+        </div>
+
+        <div class="top-controls">
+          <!-- Multi-Dark Theme Switcher -->
+          <div class="theme-dropdown">
+            <button id="themeToggleBtn" class="btn-ctrl" title="Ganti Tema Gelap">
+              <span id="themeDot" class="theme-dot" style="background: #38bdf8;"></span>
+              <span id="themeLabel">Obsidian Blue</span>
+              <span>▾</span>
+            </button>
+            <div id="themeMenu" class="theme-menu">
+              <button class="theme-opt active" data-theme="theme-obsidian-blue">
+                <span class="theme-dot" style="background: #38bdf8;"></span> Obsidian Blue
+              </button>
+              <button class="theme-opt" data-theme="theme-emerald-green">
+                <span class="theme-dot" style="background: #10b981;"></span> Emerald Green
+              </button>
+              <button class="theme-opt" data-theme="theme-deep-violet">
+                <span class="theme-dot" style="background: #a855f7;"></span> Deep Violet
+              </button>
+              <button class="theme-opt" data-theme="theme-sunset-gold">
+                <span class="theme-dot" style="background: #f59e0b;"></span> Sunset Gold
+              </button>
+              <button class="theme-opt" data-theme="theme-stealth-black">
+                <span class="theme-dot" style="background: #ffffff;"></span> Stealth OLED
+              </button>
+            </div>
+          </div>
+
+          <!-- Creator Tip Jar / Donation Button -->
+          <button id="btnOpenDonation" class="btn-ctrl btn-coffee" title="Traktir Kopi / Dukung Pengembang">
+            ☕ Traktir Kopi
+          </button>
+
+          <!-- Production Pinboard Button -->
+          <button id="btnOpenPinboard" class="btn-ctrl" title="Lihat Rencana Produksi Tersimpan">
+            📌 Pinboard <span id="pinboardCountBadge" class="pinboard-badge">0</span>
+          </button>
+
+          <!-- Admin Vault Button -->
+          <button id="btnOpenVault" class="btn-ctrl btn-vault" title="Pengaturan API Key & PIN Admin">
+            🔒 Vault <span id="vaultStatusDot" class="vault-status-dot inactive" title="Mode Bawaan / Offline Engine"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Badge & Hero Title -->
+      <div class="tool-pill">
+        <span>⚡</span> MICROSTOCK TOOL & MARKET INTELLIGENCE
+      </div>
+      <h1 class="app-title">Microstockgo</h1>
+
+      <!-- Main Navigation Tabs -->
+      <nav class="main-nav-tabs">
+        <button id="tabNavDiscovery" class="nav-tab-btn active">
+          <span>🔍</span> Discovery Dashboard
+        </button>
+        <button id="tabNavGap" class="nav-tab-btn">
+          <span>📊</span> Gap Analysis Matrix
+        </button>
+        <button id="tabNavSeasonal" class="nav-tab-btn">
+          <span>📅</span> Seasonal Roadmap
+        </button>
+      </nav>
+    </header>
+
+    <!-- MAIN VIEW 1: DISCOVERY DASHBOARD -->
+    <main id="discoveryView" class="main-view active">
+      
+      <!-- DISCOVERY CONSOLE CARD -->
+      <section class="card-glass">
+        
+        <!-- 4 Asset Format Switcher (Footage, Raster, Vector, PNG) -->
+        <div class="format-selector" id="formatSelector">
+          <button class="format-btn active" data-format="footage">
+            <span>🎥</span> Footage
+          </button>
+          <button class="format-btn" data-format="raster">
+            <span>📸</span> Raster
+          </button>
+          <button class="format-btn" data-format="vector">
+            <span>📐</span> Vector
+          </button>
+          <button class="format-btn" data-format="png">
+            <span>✨</span> PNG
+          </button>
+        </div>
+
+        <!-- Search Bar & Inspire Me -->
+        <div class="search-row">
+          <div class="search-input-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="topicInput" class="search-input" placeholder="Cari topik untuk Footage (atau biarkan kosong)..." autocomplete="off">
+          </div>
+          <button type="button" id="btnInspireMe" class="btn-inspire" title="Acak ide topik potensial">
+            <span class="dice-icon">🎲</span> Inspire Me
+          </button>
+        </div>
+
+        <!-- Filter Dropdowns Row -->
+        <div class="filters-grid">
+          <div class="filter-group">
+            <label class="filter-label" id="styleFilterLabel">Footage Style</label>
+            <select id="styleSelect" class="filter-select">
+              <!-- Dynamically populated based on format -->
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label">Subject Mode</label>
+            <select id="subjectSelect" class="filter-select">
+              <!-- Populated from data.js -->
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label">Timeframe (Microstock Lead Window)</label>
+            <select id="timeframeSelect" class="filter-select">
+              <!-- Populated from data.js -->
+            </select>
+          </div>
+        </div>
+
+        <!-- Primary Discover CTA -->
+        <button type="button" id="btnDiscover" class="btn-discover">
+          <span id="discoverBtnIcon">🎥</span>
+          <span id="discoverBtnText">Discover Footage Opportunity</span>
+        </button>
+
+        <!-- Brainstorming Idea Cloud -->
+        <div class="brainstorm-section">
+          <div class="brainstorm-header">
+            <span class="brainstorm-title" id="brainstormTitle">BRAINSTORMING IDEAS FOR FOOTAGE:</span>
+            <button type="button" id="btnRefreshIdeas" class="btn-refresh-ideas">
+              <span class="spin-icon">🔄</span> Refresh
+            </button>
+          </div>
+
+          <div class="brainstorm-categories" id="brainstormCategories">
+            <!-- Dynamic rows for Trending, Business, Lifestyle, Concepts -->
+          </div>
+        </div>
+
+      </section>
+
+      <!-- AD SLOT 1: LEADERBOARD / NATIVE BANNER (ADSTERRA READY) -->
+      <div class="ad-slot-container" id="adSlotLeaderboard">
+        <span class="ad-badge-label">Sponsored / Iklan Mitra</span>
+        <div class="ad-inner-box">
+          <!-- PASTE YOUR ADSTERRA BANNER SCRIPT (e.g. 728x90 or Native Banner) HERE -->
+          <div class="ad-placeholder-text">
+            <span>📢</span>
+            <div>
+              <strong>Slot Iklan Banner / Adsterra Ready</strong> (728x90 Desktop / 300x250 Mobile)
+              <div style="font-size: 0.75rem; color: var(--text-faint);">Pasang kode Adsterra atau Google AdSense Anda di container ini</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESULTS & INTELLIGENCE STUDIO -->
+      <section id="resultsSection" class="results-section card-glass">
+        
+        <!-- Result Header -->
+        <div class="result-card-header">
+          <div class="result-title-area">
+            <div class="badge-row">
+              <span id="resFormatBadge" class="badge-format">Footage</span>
+              <span id="resGoldenBadge" class="badge-golden">
+                <span>⭐</span> GOLDEN MARKET GAP
+              </span>
+              <span id="resTierBadge" class="badge-format" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">Tier A (High Value)</span>
+            </div>
+            <h2 id="resTopicTitle" class="result-topic">EV Charging Infrastructure & Smart Fleet</h2>
+            <p id="resTopicDesc" class="result-desc">High commercial demand from automotive manufacturers, green energy firms, and municipal infrastructure reports.</p>
+          </div>
+
+          <div class="result-actions">
+            <button type="button" id="btnPinItem" class="btn-pin" title="Simpan ke Rencana Produksi">
+              <span>📌</span> <span id="pinBtnLabel">Simpan ke Pinboard</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4 Key Opportunity Metrics -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-title">Demand Score</span>
+            <div class="metric-value">
+              <span id="resDemandScore">94</span><span class="metric-sub">/ 100</span>
+            </div>
+            <div class="meter-bar">
+              <div id="resDemandMeter" class="meter-fill" style="width: 94%;"></div>
+            </div>
+            <span class="metric-sub" id="resDemandSub">Permintaan Pembeli Sangat Tinggi</span>
+          </div>
+
+          <div class="metric-card">
+            <span class="metric-title">Competition Level</span>
+            <div class="metric-value">
+              <span id="resCompScore">28</span><span class="metric-sub">/ 100</span>
+            </div>
+            <div class="meter-bar">
+              <div id="resCompMeter" class="meter-fill comp" style="width: 28%;"></div>
+            </div>
+            <span class="metric-sub" id="resCompSub">Rendah (Peluang Blue Ocean)</span>
+          </div>
+
+          <div class="metric-card">
+            <span class="metric-title">Estimasi RPI (Return / Item)</span>
+            <div class="metric-value" id="resRPIValue">$2.80 - $6.50</div>
+            <span class="metric-sub">Potensi royalti per unduhan komersial</span>
+          </div>
+
+          <div class="metric-card">
+            <span class="metric-title">IP & Rejection Safety</span>
+            <div class="metric-value" style="color: #34d399;">
+              <span id="resSafetyScore">100%</span>
+            </div>
+            <span class="metric-sub" id="resSafetyVerdict">Aman untuk lisensi komersial</span>
+          </div>
+        </div>
+
+        <!-- AFFILIATE & PARTNER RECOMMENDATION CARD -->
+        <div class="affiliate-recommend-card">
+          <div class="affiliate-info">
+            <span class="affiliate-icon">⚡</span>
+            <div>
+              <div class="affiliate-title">Microstock Contributor Toolkit: AI Image Upscaler (4K/8K)</div>
+              <div class="affiliate-desc">Tingkatkan resolusi gambar AI (Midjourney/Flux) hingga 8K agar 100% lolos kurasi Adobe Stock tanpa penolakan noise/artefak.</div>
+            </div>
+          </div>
+          <a href="https://topazlabs.com" target="_blank" rel="noopener noreferrer" class="btn-affiliate-link">
+            <span>🚀</span> Dapatkan Tool (Diskon Khusus)
+          </a>
+        </div>
+
+        <!-- Studio Sub-Navigation Tabs -->
+        <div class="studio-tabs">
+          <button class="studio-tab-btn active" data-studio="keywords">
+            <span>🏷️</span> 50 SEO Keywords & Title Studio
+          </button>
+          <button class="studio-tab-btn" data-studio="shotlist">
+            <span>🎬</span> 5-Angle Production Shot List
+          </button>
+          <button class="studio-tab-btn" data-studio="prompts">
+            <span>🤖</span> AI Stock Prompts (Midjourney/Runway)
+          </button>
+          <button class="studio-tab-btn" data-studio="safety">
+            <span>📰</span> Editorial & Format Specs
+          </button>
+        </div>
+
+        <!-- PANEL 1: SEO KEYWORDS & TITLE -->
+        <div id="studioKeywords" class="studio-panel active">
+          <!-- Agency Formatter Switcher -->
+          <div class="agency-switch-bar">
+            <div class="agency-pills">
+              <button class="agency-btn active" data-agency="adobe">Adobe Stock (Weighted First 10)</button>
+              <button class="agency-btn" data-agency="shutterstock">Shutterstock (Max 50)</button>
+              <button class="agency-btn" data-agency="freepik">Freepik (Top 30 Specific)</button>
+              <button class="agency-btn" data-agency="getty">Getty / iStock (Concise)</button>
+            </div>
+            <button id="btnCopyAllTags" class="btn-copy-action">
+              <span>📋</span> Copy Semua Tags (<span id="tagCountDisplay">50</span>)
+            </button>
+          </div>
+
+          <!-- Optimized Title -->
+          <div class="title-box">
+            <div>
+              <span class="filter-label" style="display: block; margin-bottom: 4px;">Optimized Commercial Title:</span>
+              <div id="resTitleText" class="title-text-content">Cinematic 4K Footage of EV Charging Infrastructure for Business Marketing, Featuring Clean Copy Space</div>
+            </div>
+            <button id="btnCopyTitle" class="btn-ctrl" title="Salin Judul">
+              <span>📋</span> Salin
+            </button>
+          </div>
+
+          <!-- Tags Cloud -->
+          <div class="tags-cloud-container" id="tagsCloudContainer">
+            <!-- Dynamic interactive tag badges -->
+          </div>
+        </div>
+
+        <!-- PANEL 2: 5-ANGLE SHOT LIST -->
+        <div id="studioShotlist" class="studio-panel">
+          <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 16px;">
+            💡 <strong>Pro Contributor Strategy:</strong> Jangan hanya membuat 1 file. Buatlah 5 variasi sudut di bawah ini dalam satu sesi produksi untuk melipatgandakan peluang penjualan portofolio Anda.
+          </p>
+          <div class="shot-list-grid" id="shotListContainer">
+            <!-- Dynamic shot list items -->
+          </div>
+        </div>
+
+        <!-- PANEL 3: AI STOCK PROMPTS -->
+        <div id="studioPrompts" class="studio-panel">
+          
+          <div class="prompt-card">
+            <div class="prompt-card-header">
+              <span class="prompt-engine-tag" id="promptImgTag">Midjourney v6.1 / FLUX.1 Commercial Prompt</span>
+              <button class="btn-ctrl" id="btnCopyPromptImg"><span>📋</span> Salin Prompt</button>
+            </div>
+            <pre class="prompt-text-block" id="promptImgText"></pre>
+          </div>
+
+          <div class="prompt-card">
+            <div class="prompt-card-header">
+              <span class="prompt-engine-tag" id="promptVidTag">Kling AI / Runway Gen-3 / Luma Video Prompt</span>
+              <button class="btn-ctrl" id="btnCopyPromptVid"><span>📋</span> Salin Video Prompt</button>
+            </div>
+            <pre class="prompt-text-block" id="promptVidText"></pre>
+          </div>
+
+          <div class="prompt-card">
+            <div class="prompt-card-header">
+              <span class="prompt-engine-tag" style="color: #ef4444;">Anti-Defect Negative Prompt (Standard Kurasi Stock)</span>
+              <button class="btn-ctrl" id="btnCopyPromptNeg"><span>📋</span> Salin Negative</button>
+            </div>
+            <pre class="prompt-text-block" id="promptNegText"></pre>
+          </div>
+        </div>
+
+        <!-- PANEL 4: SAFETY & EDITORIAL -->
+        <div id="studioSafety" class="studio-panel">
+          <div id="safetyAlertBox" class="safety-alert-box safe">
+            <div class="safety-icon" id="safetyAlertIcon">🛡️</div>
+            <div>
+              <div class="safety-title" id="safetyAlertTitle">Pemeriksaan Hak Cipta & Merek (IP Safe)</div>
+              <p style="color: var(--text-muted); font-size: 0.88rem;" id="safetyAlertDesc">
+                Tidak ditemukan kata kunci merek dagang terdaftar. Aman untuk didistribusikan dengan lisensi komersial.
+              </p>
+            </div>
+          </div>
+
+          <!-- Editorial Caption Box -->
+          <div class="title-box">
+            <div>
+              <span class="filter-label" style="display: block; margin-bottom: 4px;">Official Editorial Caption (Jika Memuat Brand/Event):</span>
+              <div id="resEditorialText" class="title-text-content"></div>
+            </div>
+            <button id="btnCopyEditorial" class="btn-ctrl" title="Salin Takarir Editorial">
+              <span>📋</span> Salin
+            </button>
+          </div>
+
+          <!-- Technical Format Specs -->
+          <div class="tech-specs-box">
+            <span class="filter-label">Standard Spesifikasi Teknis Microstock:</span>
+            <div class="tech-specs-grid" id="techSpecsGrid">
+              <!-- Dynamically populated from format specifications -->
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- MAIN VIEW 2: GAP ANALYSIS MATRIX TABLE -->
+    <main id="gapView" class="main-view gap-view-container">
+      <section class="card-glass">
+        <div class="result-card-header">
+          <div>
+            <h2 class="app-title" style="font-size: 1.8rem; margin-bottom: 4px;">Market Gap Analysis Matrix</h2>
+            <p class="result-desc">Temukan celah pasar dengan Demand tinggi namun Saturation (kompetisi) rendah untuk memaksimalkan Return per Item (RPI).</p>
+          </div>
+        </div>
+
+        <!-- Filter & Sort Bar -->
+        <div class="table-filter-bar">
+          <div class="filter-pills-row" id="gapCategoryFilters">
+            <button class="filter-pill-btn active" data-cat="all">Semua Kategori</button>
+            <button class="filter-pill-btn" data-cat="business">Business & Tech</button>
+            <button class="filter-pill-btn" data-cat="lifestyle">Lifestyle</button>
+            <button class="filter-pill-btn" data-cat="trending">Trending Now</button>
+            <button class="filter-pill-btn" data-cat="concepts">Concepts</button>
+          </div>
+
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <label class="filter-label">Urutkan:</label>
+            <select id="gapSortSelect" class="filter-select" style="padding: 6px 12px; font-size: 0.85rem;">
+              <option value="opportunity">⭐ Peluang Emas (Golden Gap)</option>
+              <option value="demand">🔥 Demand Tertinggi</option>
+              <option value="competition">📉 Kompetisi Terendah</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Interactive Matrix Table -->
+        <div class="matrix-table-wrap">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Topik Niche Microstock</th>
+                <th>Format Terkait</th>
+                <th>Demand</th>
+                <th>Kompetisi</th>
+                <th>Status Peluang</th>
+                <th>Estimasi RPI</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="matrixTableBody">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- MAIN VIEW 3: SEASONAL ROADMAP -->
+    <main id="seasonalView" class="main-view seasonal-view-container">
+      <section class="card-glass">
+        <div class="result-card-header">
+          <div>
+            <h2 class="app-title" style="font-size: 1.8rem; margin-bottom: 4px;">Microstock Seasonal Calendar Roadmap</h2>
+            <p class="result-desc">
+              <strong>Aturan Emas Microstock:</strong> Unggah aset Anda <strong>60 hingga 90 hari sebelum</strong> momen puncak pencarian agar terindeks sempurna oleh kurator dan algoritma mesin pencari agensi.
+            </p>
+          </div>
+        </div>
+
+        <div class="quarters-grid" id="quartersGrid">
+          <!-- Dynamically populated Q1 - Q4 cards -->
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <!-- MODAL 1: PINBOARD & CSV EXPORTER -->
+  <div id="pinboardModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">📌 Production Pinboard</h3>
+        <button id="btnClosePinboard" class="btn-close-modal">&times;</button>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 16px;">
+        Koleksi ide dan metadata yang telah Anda simpan. Siap diekspor langsung ke template CSV resmi agensi microstock.
+      </p>
+
+      <div id="pinboardItemsContainer" style="display: flex; flex-direction: column; gap: 10px; max-height: 300px; overflow-y: auto; margin-bottom: 20px;">
+        <!-- Pinned items list -->
+      </div>
+
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 16px;">
+        <span class="filter-label" style="display: block; margin-bottom: 10px;">Ekspor Batch ke CSV Format Agensi:</span>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button id="btnExportAdobe" class="btn-copy-action" style="background: #2563eb;">📥 Adobe Stock CSV</button>
+          <button id="btnExportShutter" class="btn-copy-action" style="background: #ef4444;">📥 Shutterstock CSV</button>
+          <button id="btnExportFreepik" class="btn-copy-action" style="background: #059669;">📥 Freepik CSV</button>
+          <button id="btnClearPinboard" class="btn-ctrl" style="margin-left: auto;">🗑️ Kosongkan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: ADMIN VAULT (API KEY & PIN SECURITY) -->
+  <div id="vaultModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">🔒 Admin Security Vault</h3>
+        <button id="btnCloseVault" class="btn-close-modal">&times;</button>
+      </div>
+
+      <!-- Step 1: PIN Verification -->
+      <div id="vaultPinStep">
+        <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 16px;">
+          Pengaturan API Key dilindungi oleh Master PIN agar aman saat aplikasi dideploy ke publik. Hanya pemilik yang dapat melihat dan mengubah kunci.
+        </p>
+        <div class="form-group">
+          <label class="form-label">Masukkan Master PIN Admin (Default: 1234):</label>
+          <input type="password" id="vaultPinInput" class="form-input" placeholder="••••" maxlength="12">
+        </div>
+        <div class="modal-footer">
+          <button id="btnVerifyPin" class="btn-discover" style="padding: 10px 20px; font-size: 0.95rem;">Buka Vault 🔓</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Unlocked Settings -->
+      <div id="vaultSettingsStep" style="display: none;">
+        <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid #10b981; border-radius: var(--radius-sm); padding: 12px; margin-bottom: 16px;">
+          <span style="color: #34d399; font-weight: 700; font-size: 0.85rem;">🛡️ Vault Terbuka (Aman & Terisolasi)</span>
+          <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 4px;">
+            API Key hanya tersimpan di peramban Anda (localStorage). Tidak akan bocor ke GitHub atau pengunjung lain saat dideploy.
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Google Gemini API Key (Opsional):</label>
+          <input type="password" id="vaultApiKeyInput" class="form-input" placeholder="AIzaSy...">
+          <span style="font-size: 0.75rem; color: var(--text-faint); margin-top: 4px;">
+            Kosongkan jika ingin memakai <strong>Smart Built-in Engine</strong> (100% gratis tanpa kuota).
+          </span>
+        </div>
+
+        <div class="form-group" style="margin-top: 14px;">
+          <label class="form-label">Ubah Master PIN Admin Baru:</label>
+          <input type="password" id="vaultNewPinInput" class="form-input" placeholder="Biarkan kosong jika tidak ingin ganti PIN">
+        </div>
+
+        <div class="modal-footer" style="margin-top: 20px;">
+          <button id="btnLockVault" class="btn-ctrl">Kunci Kembali 🔒</button>
+          <button id="btnSaveVault" class="btn-discover" style="padding: 10px 20px; font-size: 0.95rem;">Simpan Pengaturan</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL 3: CREATOR SUPPORT / DONATION MODAL -->
+  <div id="donationModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">☕ Traktir Kopi & Dukung Microstockgo</h3>
+        <button id="btnCloseDonation" class="btn-close-modal">&times;</button>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+        Microstockgo gratis digunakan untuk seluruh kreator dan kontributor microstock. Jika aplikasi ini membantu Anda mendapatkan penjualan dan menghemat waktu riset, dukung pengembangan fitur-fitur baru kami:
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px;">
+        <a href="https://trakteer.id" target="_blank" rel="noopener noreferrer" class="event-row" style="text-decoration: none; color: inherit; transition: border-color 0.2s;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 1.4rem;">🇮🇩</span>
+            <div>
+              <div style="font-weight: 700; color: var(--text-main);">Trakteer.id (QRIS, GoPay, OVO, Dana)</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Dukungan cepat untuk kreator Indonesia</div>
+            </div>
+          </div>
+          <span class="btn-affiliate-link" style="padding: 6px 14px; font-size: 0.8rem;">Dukung ☕</span>
+        </a>
+
+        <a href="https://saweria.co" target="_blank" rel="noopener noreferrer" class="event-row" style="text-decoration: none; color: inherit; transition: border-color 0.2s;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 1.4rem;">💛</span>
+            <div>
+              <div style="font-weight: 700; color: var(--text-main);">Saweria (Semua E-Wallet & Bank)</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Sawer tip kopi instan dengan QRIS</div>
+            </div>
+          </div>
+          <span class="btn-affiliate-link" style="padding: 6px 14px; font-size: 0.8rem;">Sawer 🎁</span>
+        </a>
+
+        <a href="https://buymeacoffee.com" target="_blank" rel="noopener noreferrer" class="event-row" style="text-decoration: none; color: inherit; transition: border-color 0.2s;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 1.4rem;">🌍</span>
+            <div>
+              <div style="font-weight: 700; color: var(--text-main);">Buy Me a Coffee / PayPal</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Global creator support (Credit Card / PayPal)</div>
+            </div>
+          </div>
+          <span class="btn-affiliate-link" style="padding: 6px 14px; font-size: 0.8rem;">Donate $</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY FOOTER AD (ADSTERRA SOCIAL BAR / STICKY BANNER) -->
+  <div class="ad-sticky-footer" id="adStickyFooter">
+    <div class="ad-sticky-inner">
+      <div style="display: flex; align-items: center; gap: 10px; font-size: 0.84rem; color: var(--text-muted);">
+        <span style="font-size: 1.1rem;">💎</span>
+        <span><strong>Tips Kontributor:</strong> Gunakan format <em>EPS 10</em> untuk vector dan <em>RGB color mode</em> untuk menghindari penolakan color shift di Shutterstock & Adobe Stock.</span>
+      </div>
+      <button class="btn-close-ad" id="btnCloseStickyAd" title="Tutup Bar">✕</button>
+    </div>
+  </div>
+
+  <!-- TOAST FEEDBACK CONTAINER -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- JAVASCRIPT MODULES -->
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/gemini.js"></script>
+  <script src="js/export.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
